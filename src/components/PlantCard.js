@@ -1,6 +1,9 @@
 import React from "react";
 
 function PlantCard() {
+  
+
+
   return (
     <li className="card">
       <img src={"https://via.placeholder.com/400"} alt={"plant name"} />
