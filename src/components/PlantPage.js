@@ -14,12 +14,15 @@ function PlantPage() {
         setPlants(plants)
       })
   }, [])
+  
+
+const plantsToDisplay = plants
 
   return (
     <main>
       <NewPlantForm />
       <Search />
-      <PlantList />
+      <PlantList plants = {plantsToDisplay} />
     </main>
   );
 }
