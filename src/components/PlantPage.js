@@ -21,6 +21,10 @@ function PlantPage() {
     setPlants(updatedPlantsArray)
   }
   
+  function handleDeletePlant (id) {
+    const updatedPlantsArray = plants.filter(plant => plant.id !== id)
+    setPlants(updatedPlantsArray)
+  }
 
   const displayedPlants = plants.filter((plant) => {
     return (
@@ -40,6 +44,7 @@ function PlantPage() {
       />
       <PlantList 
         plants = {displayedPlants} 
+        onDeletePlant = {handleDeletePlant}
         
       />
     </main>
